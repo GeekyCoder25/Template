@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@page {
+  size: A4;
+  margin: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page {
   display: flex;
-  flex-direction: column;
+  width: 70vw;
+  margin: auto;
+  width: 210mm;
+  height: 297mm;
+  box-shadow: 0 10px 8px rgb(0 0 0 / 0.04), 0 4px 3px rgb(0 0 0 / 0.1);
+}
+aside {
+  background-color: rgb(248, 248, 248);
+  height: 100%;
+  flex: 1.5;
+}
+aside .profile {
+  background-color: rgb(158, 70, 54);
+  color: #fff;
+  padding: 30px;
+}
+aside .profile h1 {
+  font-size: 35px;
+}
+aside .profile p {
+  font-size: 30px;
+  line-height: 30px;
+  font-style: italic;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+aside .about .school {
+  color: rgb(158, 70, 54);
+  font-weight: 600;
+}
+aside .profile div {
+  font-weight: 600;
+}
+aside .profile div a {
+  text-decoration: none;
+  color: #fff;
+}
+aside .fas,
+aside .fab {
+  margin-right: 10px;
+}
+aside .image {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
 }
-
-.App-link {
-  color: #61dafb;
+aside .mine {
+  width: 150px;
+  height: 180px;
+  border-radius: 50%;
+  margin-left: 40px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+aside img {
+  width: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+aside .about {
+  padding-left: 20px;
+}
+aside .about h1 {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 50px;
+}
+aside .about h2:not(:first-of-type) {
+  margin: 15px 0;
+}
+aside .about h2 {
+  color: rgb(158, 70, 54);
+  font-weight: 600;
+  font-size: large;
+}
+aside .about .fas {
+  color: #cccccc;
+}
+main {
+  padding-left: 30px;
+  flex: 2;
+}
+main section {
+  margin-top: 5%;
+}
+main h1 {
+  color: rgb(158, 70, 54);
+  margin-bottom: 1px;
+}
+main p {
+  /* line-height: 30px; */
+  font-size: 16px;
+}
+main ul {
+  margin-left: 40px;
+}
+main ul li {
+  font-size: 16px;
+  list-style: square;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+@media (max-width: 1200px) {
+  .app {
+    width: 100vw;
   }
 }
